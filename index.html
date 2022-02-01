@@ -24,16 +24,16 @@
                   <div class="header-multi-icon">
                     <ul >
                       <li>
-                        <a><img src="images/icon/Asset 2.png" alt="user"/></a>
+                        <a><img src="images/icon/Asset 2.png" class="hvr-grow" alt="user"/></a>
                       </li>
                       <li>
-                        <a><img src="images/icon/Asset 3.png" alt="log-out"/></a>
+                        <a><img src="images/icon/Asset 3.png" class="hvr-grow" alt="log-out"/></a>
                       </li>
                       <li>
-                        <a><img src="images/icon/Asset 4.png" alt="search"/></a>
+                        <a><img src="images/icon/Asset 4.png" class="hvr-grow" alt="search"/></a>
                       </li>
                       <li>
-                        <a><img src="images/icon/Asset 5.png" alt="Share"/></a>
+                        <a><img src="images/icon/Asset 5.png" class="hvr-grow" alt="Share"/></a>
                       </li>
                     </ul>
                   </div>
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="col-lg-8 col-md-8">
-                <div class="menu-middle">
+                <div class="menu-middle" id="main-middle">
                   <ul>
                     <li>
                       <a href="#!" class="tool"><img src="images/icon/Asset 9.png" class="img-main" alt="بداية"/>
@@ -98,8 +98,28 @@
                     </li>
                     <li>
                       <a href="#!" class="tool"><h6>11 / 1 </h6>
-                        <span class="tooltiptext">العدد</span>
-                      </a>
+                        <span class="tooltiptext">العدد</span></a>
+                          <ul class="dropdown-tool">
+                              <li>
+                                <a href="#">العدد 1</a>
+                              </li>
+                              <li>
+                                <a href="#"> العدد 2 </a>
+                              </li>
+                              <li>
+                                <a href="#"> العدد 3 </a>
+                              </li>
+                              <li>
+                                <a href="#"> العدد 4</a>
+                              </li>
+                              <li>
+                                <a href="#"> العدد 5 </a>
+                              </li>
+                              <li>
+                                <a href="#"> العدد 6</a>
+                              </li>
+                            </ul>
+                      
                     </li>
                     <li>
                       <a href="#!"><img src="images/icon/Asset 11.png" class="img-break" alt="break"/></a>
@@ -299,7 +319,7 @@
                   <img src="images/background/Asset 40.png">
                 </div>
                 <div class="slides-image">
-                  <img src="images/background/Asset 40.png">
+                  <img src="images/background/1.png">
                 </div>
                 <div class="slides-image">
                   <img src="images/background/Asset 40.png">
@@ -309,19 +329,23 @@
                 </div>
                 <div class="slides-image">
                   <img src="images/background/Asset 40.png">
+                </div>
+                <div class="all-btn">
+                  <div class="prevContainer"><a class="prev" onclick="plusSlides(-1)">
+                    <svg viewBox="0 0 24 24">
+                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                </svg>
+                    </a></div>
+                  <div class="nextContainer"><a class="next" onclick="plusSlides(1)">
+                    <svg viewBox="0 0 24 24">
+                  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="prevContainer"><a class="prev" onclick="plusSlides(-1)">
-                <svg viewBox="0 0 24 24">
-                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-            </svg>
-                </a></div>
-              <div class="nextContainer"><a class="next" onclick="plusSlides(1)">
-                <svg viewBox="0 0 24 24">
-              <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-            </svg>
-                </a>
-              </div>
+              
+             
               <!-- thumnails in a row -->
               <div class="row">
                 <div class="col-lg-5 col-md-12 col-xs-12">
@@ -334,7 +358,7 @@
                 </div>
                 <div class="col-lg-7 col-md-12 col-xs-12">
                   <div class="column">
-                    <img class="slide-image-thumbnail" src="images/background/Asset 28.png" onclick="currentSlide(1)" alt="Caption One">
+                    <img class="slide-image-thumbnail" src="images/background/1.png" onclick="currentSlide(1)" alt="Caption One">
                   </div>
                   <div class="column">
                     <img class="slide-image-thumbnail" src="images/background/Asset 28.png" onclick="currentSlide(2)" alt="Caption Two">
@@ -644,6 +668,15 @@
 			}
 			else {
 				$('.mainMenu').removeClass('act');
+			}
+	});
+$('.tool').click(function() {
+		$(this).toggleClass('act');
+			if($(this).hasClass('act')) {
+				$('.dropdown-tool').addClass('act');
+			}
+			else {
+				$('.dropdown-tool').removeClass('act');
 			}
 	});
 });
