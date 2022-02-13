@@ -1741,45 +1741,6 @@ th {
 
 
 /* =========================== Home-Page=================== */
-  
-
-
-
-@media only screen and (max-width: 1199px) {
-
-
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-   
-    
-    
-    
-}
-
-@media only screen and (max-width: 479px) {
-   
-
-}
-
-
-@media only screen and (max-width: 479px) {
-    
-}
-
-
-/*////////iphone x*/
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-    .main-menu .navigation {
-        display: none;
-    }
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
-  
-   
-}
 
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -1790,5 +1751,6 @@ th {
         margin-left: 50px;
         margin-right: 0;
     } 
+    
 }
 

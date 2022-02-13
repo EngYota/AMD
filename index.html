@@ -1,4 +1,4 @@
-<html lang="en" dir="rtl">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +9,28 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/fontawesome-all.css">
         <link rel="stylesheet" href="css/hover.css">
-        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+
+        
   </head>
-  
+
   <body>
     <div class="wrapper">
       <!-- /.preloader -->
      <header class="main-header">
         <div class="header-upper">
-            <div class="inner-container clearfix">
+            <div class="container-fluid clearfix">
               <div class="row">
                 <div class="col-md-5">
                   <div class="header-multi-icon">
                     <ul >
                       <li>
-                        <a><img src="images/icon/Asset 2.png" class="hvr-grow" alt="user"/></a>
+                        <a href="#login-modal"><img src="images/icon/Asset 2.png" class="hvr-grow" alt="user"/></a>
                       </li>
                       <li>
-                        <a><img src="images/icon/Asset 3.png" class="hvr-grow" alt="log-out"/></a>
+                        <a href="#register-modal"><img src="images/icon/Asset 3.png" class="hvr-grow" alt="log-out"/></a>
                       </li>
                       <li>
                         <a><img src="images/icon/Asset 4.png" class="hvr-grow" alt="search"/></a>
@@ -48,10 +51,108 @@
             </div>   
             </div>
         </div>
+        <div id="login-modal" class="modal">
+          <div class="modal__content">
+            <div class="container">
+            <div class="login-content">
+              <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                  <form>
+                    <div class="login-form">
+                      <h2>تسجيل الدخول</h2>
+                      <div class="form-group">
+                        <input type="text" placeholder="اسم المستخدم أو البريد الالكترونى" class="form-control"/>
+                        <span><i class="fas fa-user"></i></span>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" placeholder="كلمة المرور" class="form-control"/>
+                        <span><i class="fas fa-lock"></i></span>
+                      </div>
+                      <div class="form-group">
+                        <label class="container">تذكرنى
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      <a href="#!">هل نسيت كلمة السر ؟</a>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="form-control"> دخول </button>
+                      </div>
+                    </div>
+                  </form>
+    
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12 back-row">
+                  <div class="login-back">
+                    <h2>مرحبا بك !</h2>
+                    <p>يمكنك تسجيل الدخول للوصول باستخدام <br/> حساب موجود أو حساب جديد</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <a href="#" class="modal__close">&times;</a>
+          </div>
+        </div>
+        <div id="register-modal" class="modal">
+          <div class="modal__content">
+            <div class="container">
+            <div class="login-content">
+              <div class="row">
+                <div class="col-lg-8 col-md-9 col-sm-10 col-xs-12">
+                  <form>
+                    <div class="register-form ">
+                      <h2>تسجيل مستخدم</h2>
+                      <div class="row">
+                        <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                          <label>الاسم</label>
+                          <input type="text" placeholder=" الاسم الكامل " class="form-control"/>
+                          <span><i class="fas fa-user"></i></span>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                          <label>اسم المستخدم</label>
+                          <input type="text" placeholder="اسم المستخدم" class="form-control"/>
+                          <span><i class="fas fa-user"></i></span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                          <label>البريد الالكترونى</label>
+                          <input type="email" placeholder=" البريد الالكترونى " class="form-control"/>
+                          <span><i class="fas fa-envelope"></i></span>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                          <label> كلمة المرور </label>
+                          <input type="password" placeholder="كلمة المرور" class="form-control"/>
+                          <span><i class="fas fa-lock"></i></span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="container">أوافق علي <a href="#!"> الشروط والأحكام </a>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="form-control"> تسجيل </button>
+                      </div>
+                    </div>
+                  </form>
+    
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-2 col-xs-12 back-row">
+                  <div class="login-back"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <a href="#" class="modal__close">&times;</a>
+          </div>
+        </div>
         <div class="header-bottom">
-          <div class="inner-container clearfix">
+          <div class="container-fluid clearfix">
             <div class="row">
-              <div class="col-lg-4 col-md-4">
+              <div class="col-lg-4 col-md-3">
                 <div class="header-menu">
                   <a href="#" class="menuBtn">
                     <img src="images/icon/Asset 12.png" alt="menu-img">
@@ -85,7 +186,7 @@
                   </nav>
                 </div>
               </div>
-              <div class="col-lg-8 col-md-8">
+              <div class="col-lg-8 col-md-9">
                 <div class="menu-middle" id="main-middle">
                   <ul>
                     <li>
@@ -148,7 +249,7 @@
       </header>
       <!-- --------------------------Main  -->
       <div class="main-home">
-        <div class="inner-container clearfix">
+        <div class="container-fluid clearfix">
           <div class="row" id="boxscroll">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <div class="home-card">
@@ -301,7 +402,7 @@
 
         </div>
       </div>
-         
+      
     </div><!-- /.wrapper -->
     <div class="modal fade" id="Mymodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
       <div class="modal-dialog" role="document">
@@ -375,7 +476,7 @@
                 </div>  
               </div>
               <div class="row article-info">
-                <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12">
                   <ul>
                     <li><h4><span>10</span> تعليقات </h4></li>
                     <li><h4><span>50</span> مشاهدات </h4></li>
@@ -383,7 +484,7 @@
                   </ul>
 
                 </div>
-                <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12">
                   <ul class="article-icon">
                     <li>
                       <a href="#!"><img src="images/icon/Asset 37.png"></a>
@@ -436,18 +537,19 @@
                 </div>
                 </div>
                <form>
-                    <div class="row comments collapse multi-collapse" id="multiCollapseExample1">
-                    <div class="col-lg-11 col-md-9 col-xs-10 form-group">
-                      <input type="text" class="form-control" placeholder="إضافة تعليق"/>
-                    </div>
-                    <div class="col-lg-1 col-md-3 col-xs-2">
-                      <div class="user-image">
-                        <img src="images/icon/Asset 32.png"/>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <div class="row comments ">
+                        <div class="col-lg-11 col-md-10 col-xs-10 form-group">
+                          <input type="text" class="form-control" placeholder="إضافة تعليق"/>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-xs-2">
+                          <div class="user-image">
+                            <img src="images/icon/Asset 32.png"/>
+                          </div>
+                        </div>
                       </div>
-                      
-                    </div>
                 </form>
-                <div class="row comments">
+                <div class="row comments-exs">
                   <div class="col-md-12">
                   <div class="comment-example">
                     <img src="images/icon/Asset 32.png" alt=""/>
@@ -484,6 +586,7 @@
         </div>
       </div>
     </div> 
+    
     <!-- <div class="modal fade" id="vediomodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
