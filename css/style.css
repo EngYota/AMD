@@ -270,7 +270,7 @@ p {
     top: 100px;
     z-index: 100;
     height: 440px;
-    width: 250px;
+    width: 265px;
     display: block;
     text-align: center;
     opacity: 0;
@@ -332,10 +332,13 @@ p {
   color: #000;
   display: inline-block;
   font-size: 16px;
-  padding-right: 30px;
+  padding-right: 25px;
   font-family: var(--thm-font);
 }
-
+.header-menu .mainMenu a i{
+    padding-left: 10px;
+    color: #606060;
+}
 .main-header .header-bottom  #main-middle{
     float: right;
 }
@@ -399,7 +402,7 @@ p {
     border: 1px solid #eee;
     border-radius: 40px;
     position: absolute;
-    right: -300px;
+    right: -700px;
     top: 65px;
     z-index: 100;
     height: auto;
@@ -447,6 +450,12 @@ p {
     position: relative;
     padding: 60px 0;
 }
+.main-home .col-lg-3,
+.main-home .col-md-4 ,
+.main-home .col-sm-6,
+.main-home .col-xs-12{
+    margin-bottom: 50px;
+}
 .main-home .home-card{
     height: 350px;
     width: 100%;
@@ -461,6 +470,9 @@ p {
 }
 .main-home .home-card .card-image img{
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    max-height: 200px;
 }
 .main-home .home-card .card-text{
     padding-right: 20px;
@@ -468,7 +480,7 @@ p {
 }
 .main-home .home-card .card-text h6{
     color: #59bcc6;
-    font-size: 13px;
+    font-size: 9px;
 }
 .main-home .home-card .card-text h2{
     color: #4e4e4e;
@@ -483,13 +495,20 @@ p {
 }
 .main-home .home-card .card-bottom ul{
     display: flex;
+    justify-content: center;
 }
 .main-home .home-card .card-bottom ul li {
-    padding-left: 12px;
+    padding-left: 20px;
 }
 .main-home .home-card .card-bottom ul li h4{
     font-size: 12px;
     line-height: 28px;
+    color: #4e4e4e;
+}
+.main-home .home-card .card-bottom ul li h4 img{
+    width: 15px;
+    height: 14px;
+
 }
 .main-home .home-card .card-bottom ul li span{
     color: #59bcc6;
@@ -535,7 +554,7 @@ p {
 #Mymodel .home-article-text .article-text h2,
 #vediomodel .home-article-text .article-text h2{
     color: #606060;
-    font-size: 30px;
+    font-size: 25px;
 }
 #Mymodel .modal-body .holder::-webkit-scrollbar,
 #vediomodel .modal-body .holder::-webkit-scrollbar {
@@ -681,6 +700,11 @@ p {
     line-height: 37px;
     font-weight: 400;
 }
+#Mymodel .modal-body .article-info ul li h4 img,
+ #vediomodel .modal-body .article-info ul li h4 img{
+     width: 15px;
+     height: 14px;
+ }
 #Mymodel .modal-body .article-info ul li span,
 #vediomodel .modal-body .article-info ul li span{
     color: #59bcc6;
@@ -996,6 +1020,12 @@ p {
     font-size: 16px;
     height: 45px;
 }
+#Mymodel .modal-body .article-info ul.article-icon li img, 
+#vediomodel .modal-body .article-info ul.article-icon li img{
+    width: 17px;
+    height: 32px;
+    padding-top: 2px;
+}
 /* ======================================= responsive ======================================= */
 
 @media only screen and (max-width: 2560px) {
@@ -1007,7 +1037,7 @@ p {
         height: 146px;
     }
     .main-home .home-card .card-text h6 {
-        font-size: 23px;
+        font-size: 18px;
         padding-top: 10px;
     }
     .main-home .home-card .card-text h2 {
@@ -1042,6 +1072,8 @@ p {
     #Mymodel .modal-body .article-info ul.article-icon li img, 
     #vediomodel .modal-body .article-info ul.article-icon li img{
         padding-top: 4px;
+        width: 17px;
+        height: 32px;
     }
     #Mymodel .modal-body .comments h3, 
     #vediomodel .modal-body .comments h3{
@@ -1069,7 +1101,7 @@ p {
         height: 146px;
     }
     .main-home .home-card .card-text h6 {
-        font-size: 13px;
+        font-size: 8px;
         padding-top: 10px;
         margin-bottom: 0;
     }
@@ -1095,7 +1127,7 @@ p {
     }
     #Mymodel .modal-body .article-info ul.article-icon li img,
     #vediomodel .modal-body .article-info ul.article-icon li img {
-        padding-top: 7px;
+        padding-top: 3px;
     }
 
 }
@@ -1108,7 +1140,7 @@ p {
         padding-left: 10px;
     }
     .main-home .home-card .card-text h6 {
-        font-size: 12px;
+        font-size: 8px;
         padding-top: 6px;
     }
     .main-home .home-card .card-text h2 {
@@ -1201,7 +1233,7 @@ p {
         height: auto;
     }
     .main-home .home-card .card-text h6 {
-        font-size: 15px;
+        font-size: 10px;
     }
     .main-home .home-card .card-text h2 {
         font-size: 19px;
@@ -1371,7 +1403,7 @@ p {
     }
     #Mymodel .home-article-text .article-text h6, 
     #vediomodel .home-article-text .article-text h6 {
-        font-size: 15px;
+        font-size: 12px;
     }
     #Mymodel .home-article-text .article-text h2, 
     #vediomodel .home-article-text .article-text h2{
