@@ -1030,11 +1030,12 @@ p {
 
 @media only screen and (max-width: 2560px) {
     .main-home .home-card{
-        height: 650px;
+        height: 100%;
+        max-height: 440px;
         margin-bottom: 50px;
     }
     .main-home .home-card .card-text{
-        height: 146px;
+        height: 130px;
     }
     .main-home .home-card .card-text h6 {
         font-size: 18px;
@@ -1094,11 +1095,12 @@ p {
 }
 @media only screen and (max-width: 1440px) {
     .main-home .home-card{
-        height: 455px;
+        height: 100%;
+        max-height: 370px;
         margin-bottom: 50px;
     }
     .main-home .home-card .card-text{
-        height: 146px;
+        height: 95px;
     }
     .main-home .home-card .card-text h6 {
         font-size: 8px;
@@ -1133,10 +1135,11 @@ p {
 }
 @media only screen and (max-width: 1119px) {
     .main-home .home-card{
-        height: 339px;
+        height: 100%;
+        max-height: 320px !important;
     }
     .main-home .home-card .card-text{
-        height: 120px;
+        height: 65px;
         padding-left: 10px;
     }
     .main-home .home-card .card-text h6 {
@@ -1230,7 +1233,8 @@ p {
         margin-left: -21px;
     }
     .main-home .home-card {
-        height: auto;
+        height: 100%;
+        max-height: 390px;
     }
     .main-home .home-card .card-text h6 {
         font-size: 10px;
@@ -1345,7 +1349,6 @@ p {
     }
     
 }
-
 
 /*// Galaxy */
 @media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
